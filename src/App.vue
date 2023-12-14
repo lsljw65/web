@@ -28,6 +28,9 @@ html,body{
   padding:0;
   box-sizing:border-box;
 }
+img{
+  vertical-align: middle;
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

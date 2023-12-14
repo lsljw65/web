@@ -18,12 +18,36 @@ const routes = [
   {
     path:'/menu',
     name:'menu',
-    component:()=>import('../views/MenuView.vue')
+    component:()=>import('../views/MenuView.vue'),
+    children:[
+      
+      {
+        path:'/coffee',
+        name:'coffee',
+        component:()=>import('../views/CoffeeView.vue')
+      },
+      {
+        path:'/drink',
+        name:'drink',
+        component:()=>import('../views/DrinkView.vue')
+      },
+      {
+        path:'/tea',
+        name:'tea',
+        component:()=>import('../views/CoffeeView.vue')
+      },
+      {
+        path:'/food',
+        name:'food',
+        component:()=>import('../views/DrinkView.vue')
+      },
+    ]
   },
   {
     path:'/product',
     name:'product',
-    component:()=>import('../views/ProductView.vue')
+    component:()=>import('../views/ProductView.vue'),
+    
   }
 ]
 
