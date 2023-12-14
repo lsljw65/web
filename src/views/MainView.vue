@@ -32,6 +32,12 @@
 </template>
 
 <script>
+
+import $ from 'jquery';
+
+$("html,body").css({
+    "background":"#eee"
+})
 export default{
 
 }
