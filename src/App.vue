@@ -1,12 +1,33 @@
 <template>
-  <nav>
+  <!-- <nav>
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link>
-  </nav>
+  </nav> -->
+  <WebHeader></WebHeader>
   <router-view/>
+  <WebFooter></WebFooter>
 </template>
 
+<script>
+import WebHeader from './components/WebHeader.vue'
+import WebFooter from './components/WebFooter.vue';
+export default{
+  name:"App",
+  components:{
+    WebHeader,
+    WebFooter
+  }
+}
+</script>
 <style>
+html,body{
+
+}
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -15,9 +36,9 @@
   color: #2c3e50;
 }
 
-nav {
+/* nav {
   padding: 30px;
-}
+} */
 
 nav a {
   font-weight: bold;
