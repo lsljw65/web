@@ -25,13 +25,13 @@ import CoffeeView from './CoffeeView.vue';
 import DrinkView from './DrinkView.vue';
 import TeaView from './TeaView.vue';
 import FoodView from './FoodView.vue';
-$(function(){
+/* $(function(){
     $(".nav-menu button").eq(0).addClass("active");
     $(".nav-menu button").click(function(){
         $(".nav-menu button").removeClass("active");
         $(this).addClass("active")
     })
-})
+}) */
 export default{
     
     components:{
@@ -42,6 +42,13 @@ export default{
     },
     data(){
         return{ comp:'CoffeeView'}
+    },
+    mounted(){
+        $(".nav-menu button").eq(0).addClass("active");
+        $(".nav-menu button").click(function(){
+            $(".nav-menu button").removeClass("active");
+            $(this).addClass("active")
+        })
     },
     methods:{
         changeComponent:function(componentName){
