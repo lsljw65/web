@@ -43,6 +43,15 @@ nav {
 nav a {
   font-weight: bold;
   color: #2c3e50;
-  margin:0 20px;
+  margin:0 10px;
+  font-size:0.9rem;
 }
+
+@media screen and (min-width:640px){
+  nav a{
+    font-size:1rem;
+    margin:0 20px;
+  }
+}
+
 </style>
